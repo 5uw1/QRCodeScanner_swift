@@ -20,6 +20,7 @@
 		4D10C3032A8008BF0093CD9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D10C3052A8008C00093CD9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D10C3082A8008C00093CD9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DD9D10A2A806618000BC9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		4D10C3002A8008BF0093CD9B /* QRCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				4DD9D10A2A806618000BC9F2 /* Info.plist */,
 				4D10C3012A8008BF0093CD9B /* QRCodeScannerApp.swift */,
 				4D10C3032A8008BF0093CD9B /* ContentView.swift */,
 				4D10C3052A8008C00093CD9B /* Assets.xcassets */,
@@ -278,6 +280,7 @@
 				DEVELOPMENT_TEAM = HCNJJGF4SS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QRCodeScanner/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "QR Code Scanner";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,6 +312,7 @@
 				DEVELOPMENT_TEAM = HCNJJGF4SS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QRCodeScanner/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "QR Code Scanner";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

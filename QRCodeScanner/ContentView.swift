@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var scannerSheet : some View {
         CodeScannerView(
-            codeTypes: [.qr,],
+            codeTypes: [.qr,.dataMatrix,.code39,.code93,.code128],
             completion: {
                 result in if case let .success(code) = result {
                     self.scannedCode = code.string
