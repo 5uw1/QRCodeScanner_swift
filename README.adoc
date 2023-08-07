@@ -1,2 +1,13 @@
 = QRCodeScanner (swift)
+:sectnums:
+:sectnumlevels: 4 
+5uw1
+:reproducible:
+:listing-caption: Listing
+:source-highlighter: highlightjs
+:toc:
+:title-page:
+:pdf-page-size: Letter
+
+== Introduction
 Simple QR Code Scanner using swiftui for iOS and MacOS
