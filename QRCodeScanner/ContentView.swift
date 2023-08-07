@@ -7,8 +7,10 @@
 
 import SwiftUI
 import CodeScanner
+import UniformTypeIdentifiers
 
 struct ContentView: View {
+    @State var isResultAvailable = false
     @State var isPressentingScanner = false
     @State var scannedCode: String = "Scan a QR code to get started."
     
@@ -19,6 +21,7 @@ struct ContentView: View {
                 result in if case let .success(code) = result {
                     self.scannedCode = code.string
                     self.isPressentingScanner = false
+                    self.isResultAvailable = true
                 }
                     
             }
@@ -42,6 +45,20 @@ struct ContentView: View {
             Text(scannedCode)
             .sheet(isPresented: $isPressentingScanner) {
                 self.scannerSheet
+            }
+            
+            if (isResultAvailable) {
+                Button {
+                    print(scannedCode)
+                    UIPasteboard.general.string = scannedCode
+                } label: {
+                    VStack {
+                        Image(systemName: "doc")
+                            .imageScale(.large)
+                            .foregroundColor(.accentColor)
+                        Text("Copy to clipboard")
+                    }
+                }
             }
         }
         .padding()
