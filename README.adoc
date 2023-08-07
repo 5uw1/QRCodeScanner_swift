@@ -1,0 +1,2 @@
+= QRCodeScanner (swift)
+Simple QR Code Scanner using swiftui for iOS and MacOS
